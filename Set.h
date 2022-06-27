@@ -98,9 +98,9 @@ public:
     }
     Set& operator-=(const Set& s){
         Set NewSet;
-        for(unsigned int i = 0; i < s.len(); ++i){
-            if(s.find(_vector[i]) == -1){
-                NewSet.push_back(s._vector[i]);
+        for(unsigned int i = 0; i < len(); ++i){
+            if(find(s._vector[i]) == -1){
+                NewSet.push_back(_vector[i]);
             }
         }
         *this = NewSet;

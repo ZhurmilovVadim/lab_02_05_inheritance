@@ -54,10 +54,13 @@ public:
         push_back(elem);
     }
 
-    ~vector() {
-        delete[] _vector;
-        _vector = nullptr;
-    }
+//    ~vector() {
+//        for (int i = 0; i < _curr_len; ++i){
+//            delete [] _vector[i];
+//        }
+//        delete[] _vector;
+//        _vector = nullptr;
+//    }
 
     void push_back(T element) {
         _curr_len++;
